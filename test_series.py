@@ -11,8 +11,8 @@ FIBONACCI_NUMBERS = [
 def test_fibonacci(n, result):
     """test fibonacci for some value of n."""
     import series
-    assert series.fibonacci(n) == result
-    
+    assert fibonacci(n) == result
+
 
 def test_fibonacci_exists():
     """Test whether fibonacci function exists."""
