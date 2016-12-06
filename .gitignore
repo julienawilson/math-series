@@ -82,11 +82,10 @@ celerybeat-schedule
 venv/
 ENV/
 pip-selfcheck.json
-pyenv.cfg
+pyvenv.cfg
 bin/
 include/
 share/
-
 
 
 # Spyder project settings
