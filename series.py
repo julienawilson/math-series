@@ -5,3 +5,11 @@ def fibonacci(n):
     """Return the nth number in the fibonaci series."""
     if n == 0:
         return 0
+
+
+def fibonacci(n):
+    """Return the nth number in the fibonaci series."""
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
