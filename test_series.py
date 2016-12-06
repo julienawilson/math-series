@@ -14,6 +14,7 @@ FIBONACCI_NUMBERS = [
     [8, 21],
     [9, 34],
     [10, 55],
+    [30, 832040],
 ]
 
 @pytest.mark.parametrize("n, result", FIBONACCI_NUMBERS)
