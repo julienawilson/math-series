@@ -27,3 +27,5 @@ def sum_series(n, a=0, b=1):
         return a
     elif n == 1:
         return b
+    else:
+        return sum_series(n - 1) + sum_series(n - 2)
