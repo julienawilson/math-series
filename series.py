@@ -25,3 +25,5 @@ def sum_series(n, a=0, b=1):
     """Determine nth number in series with starting values of a and b."""
     if n == 0:
         return a
+    elif n == 1:
+        return b
