@@ -78,7 +78,14 @@ def test_sum_series_exists():
     assert series.sum_series
 
 
-def test_sum_series_0_def():
-    """Test sum_series(0) with def kwargs."""
+def test_sum_series_0_default():
+    """Test sum_series(0) with default kwargs."""
     from series import sum_series
     assert sum_series(0) == 0
+
+
+@pytest.mark.parametrize("n, result", FIBONACCI_NUMBERS)
+def test_sum_series_default(n, result):
+    """Test sum_series for some value of n with default kwargs."""
+    from series import sum_series
+    assert sum_series(n) == result
