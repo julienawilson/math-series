@@ -17,9 +17,10 @@ FIBONACCI_NUMBERS = [
     [30, 832040],
 ]
 
+
 @pytest.mark.parametrize("n, result", FIBONACCI_NUMBERS)
 def test_fibonacci(n, result):
-    """test fibonacci for some value of n."""
+    """Test fibonacci for some value of n."""
     from series import fibonacci
     assert fibonacci(n) == result
 
@@ -34,3 +35,9 @@ def test_fib_0():
     """Test output of fibanacci with argument 0."""
     from series import fibonacci
     assert fibonacci(0) == 0
+
+
+def test_lucas_exists():
+    """Test whether lucas function exists."""
+    import series
+    assert series.lucas
