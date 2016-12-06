@@ -30,7 +30,7 @@ LUCAS_NUMBERS = [
     [8, 47],
     [9, 76],
     [10, 123],
-    [30, 1860498]
+    [30, 1860498],
 ]
 
 
@@ -89,3 +89,10 @@ def test_sum_series_default(n, result):
     """Test sum_series for some value of n with default kwargs."""
     from series import sum_series
     assert sum_series(n) == result
+
+
+@pytest.mark.parametrize("n, result", LUCAS_NUMBERS)
+def test_sum_series_lucas(n, result):
+    """Test sum_series to return lucas numbers."""
+    from series import sum_series
+    assert sum_series(n, 2, 1) == result
