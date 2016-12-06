@@ -41,3 +41,9 @@ def test_lucas_exists():
     """Test whether lucas function exists."""
     import series
     assert series.lucas
+
+
+def test_lucas_0():
+    """Test output of lucas with argument 0."""
+    from series import lucas
+    assert lucas(0) == 2
