@@ -10,7 +10,7 @@ FIBONACCI_NUMBERS = [
 @pytest.mark.parametrize("n, result", FIBONACCI_NUMBERS)
 def test_fibonacci(n, result):
     """test fibonacci for some value of n."""
-    import series
+    from series import fibonacci
     assert fibonacci(n) == result
 
 
