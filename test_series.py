@@ -18,6 +18,12 @@ FIBONACCI_NUMBERS = [
 ]
 
 
+LUCAS_NUMBERS = [
+    [0, 2],
+    [1, 1]
+]
+
+
 @pytest.mark.parametrize("n, result", FIBONACCI_NUMBERS)
 def test_fibonacci(n, result):
     """Test fibonacci for some value of n."""
@@ -47,3 +53,10 @@ def test_lucas_0():
     """Test output of lucas with argument 0."""
     from series import lucas
     assert lucas(0) == 2
+
+
+@pytest.mark.parametrize("n, result", LUCAS_NUMBERS)
+def test_lucas(n, result):
+    """Test lucas for some value of n."""
+    from series import lucas
+    assert lucas(n) == result
