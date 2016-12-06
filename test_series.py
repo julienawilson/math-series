@@ -76,3 +76,9 @@ def test_sum_series_exists():
     """Test whether the sum_series function exists."""
     import series
     assert series.sum_series
+
+
+def test_sum_series_0_def():
+    """Test sum_series(0) with def kwargs."""
+    from series import sum_series
+    assert sum_series(0) == 0
