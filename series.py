@@ -23,4 +23,5 @@ def lucas(n):
 
 def sum_series(n, a=0, b=1):
     """Determine nth number in series with starting values of a and b."""
-    pass
+    if n == 0:
+        return a
