@@ -3,4 +3,5 @@
 
 def fibonacci(n):
     """Return the nth number in the fibonaci series."""
-    pass
+    if n == 0:
+        return 0
