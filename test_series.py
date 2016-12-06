@@ -70,3 +70,9 @@ def test_lucas(n, result):
     """Test lucas for some value of n."""
     from series import lucas
     assert lucas(n) == result
+
+
+def test_sum_series_exists():
+    """Test whether the sum_series function exists."""
+    import series
+    assert series.sum_series
