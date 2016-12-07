@@ -33,12 +33,14 @@ LUCAS_NUMBERS = [
     [30, 1860498],
 ]
 
+
 WILSON_NUMBERS = [
     [6, 5, 2, 41],
     [4, 6, 9, 39],
     [5, 4, 2, 22],
     [7, 3, 10, 154],
 ]
+
 
 @pytest.mark.parametrize("n, result", FIBONACCI_NUMBERS)
 def test_fibonacci(n, result):
@@ -102,6 +104,7 @@ def test_sum_series_lucas(n, result):
     """Test sum_series to return lucas numbers."""
     from series import sum_series
     assert sum_series(n, 2, 1) == result
+
 
 @pytest.mark.parametrize("n, a, b, result", WILSON_NUMBERS)
 def test_sum_series_wilson(n, a, b, result):
