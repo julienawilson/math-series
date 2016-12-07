@@ -32,11 +32,17 @@ def sum_series(n, first=0, second=1):
 
 
 if __name__ == "__main__":
-    print("""This code houses the fibonacci and lucas functions.
-...
-fibonacci(n):
-Return the nth number in the fibonaci series.
-lucas(n):
-Return the nth number in the lucas series.
-sum_series(n, first=0, second=1):
-Determine nth number in series with starting values of first and second.""")
+    output = """
+    This code houses the fibonacci and lucas functions.
+    ...
+
+    fibonacci(n):
+    Return the nth number in the fibonaci series.
+
+    lucas(n):
+    Return the nth number in the lucas series.
+    
+    sum_series(n, first=0, second=1):
+    Determine nth number in series with starting values of first and second.
+    """
+    print(output)
