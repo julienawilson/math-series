@@ -21,11 +21,22 @@ def lucas(n):
         return lucas(n - 1) + lucas(n - 2)
 
 
-def sum_series(n, a=0, b=1):
-    """Determine nth number in series with starting values of a and b."""
+def sum_series(n, first=0, second=1):
+    """Determine nth number in series with starting values of first and second."""
     if n == 0:
-        return a
+        return first
     elif n == 1:
-        return b
+        return second
     else:
-        return sum_series(n - 1, a, b) + sum_series(n - 2, a, b)
+        return sum_series(n - 1, first, second) + sum_series(n - 2, first, second)
+
+
+if __name__ == "__main__":
+    print("""This code houses the fibonacci and lucas functions.
+...
+fibonacci(n):
+Return the nth number in the fibonaci series.
+lucas(n):
+Return the nth number in the lucas series.
+sum_series(n, first=0, second=1):
+Determine nth number in series with starting values of first and second.""")
