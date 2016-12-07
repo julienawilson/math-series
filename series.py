@@ -1,24 +1,14 @@
-"""This code houses the fibonacci and lucas functions."""
+"""This module defines functions that implement mathematical series."""
 
 
 def fibonacci(n):
     """Return the nth number in the fibonacci series."""
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+    return sum_series(n)
 
 
 def lucas(n):
     """Return the nth number in the lucas series."""
-    if n == 0:
-        return 2
-    elif n == 1:
-        return 1
-    else:
-        return lucas(n - 1) + lucas(n - 2)
+    return sum_series(n, 2, 1)
 
 
 def sum_series(n, first=0, second=1):
